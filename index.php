@@ -40,8 +40,8 @@ switch ($command) {
         $response = "Tranquilo, estoy contigo.";
         sendMessage($chatId, $response);
         break;
-    case '/ayuda2':
-        $response = "Tranquilo, estoy contigo.";
+    case 'Lucía:
+        $response = "eres muuuuy guapa";
         $keyboard = '["Gracias"],["Pos Ok"]';
         sendMessage($chatId, $response,$keyboard);
         break;
