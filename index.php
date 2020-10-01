@@ -41,7 +41,7 @@ switch ($command) {
         sendMessage($chatId, $response);
         break;
     case 'Lucía':
-        $response = "eres muuuuy guapa :kissing_heart:";
+        $response = "eres muuuuy guapa :kissing_heart:     u'\U000026C4'";
         $keyboard = '["Gracias"],["Pos Ok"]';
         sendMessage($chatId, $response,$keyboard);
         break;
