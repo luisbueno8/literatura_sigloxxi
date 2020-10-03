@@ -14,8 +14,7 @@ $chatId = $update["message"]["chat"]["id"];
 
 $pepe2 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/cartel1.jpg" -F caption="TheImage" > /dev/null &';
 
-$espi_inicio = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/espi.gif" -F caption="TheImage" > /dev/null &';
-$espi_inicio2 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/espi2.jpeg" -F caption="TheImage" > /dev/null &';
+$espi_inicio2 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/espi2.jpeg" -F caption="Y amigo de Don Pimpón 💜" > /dev/null &';
 
 
 $chatType = $update["message"]["chat"]["type"];
@@ -45,17 +44,22 @@ $message = substr(strstr($message," "), 1);
  
 //No requieren variables del usuario.
 switch ($command) {
- case 'hola':
- echo exec ($espi_inicio);
- echo exec ($espi_inicio2);
-
-  $response="¿Qué tal estás?";
-  sendMessage($chatId, $response);
-  $response="Mi nombre es Espinete 🦔, un mito televiso de los '80";
-  sendMessage($chatId, $response);
-  $response="Soy un experto en ciberseguridad, especialmente en el campo de la criptografía 🏴‍☠️🐉. ";
-  sendMessage($chatId, $response);
-break;
+   case 'hola':
+   case 'Hola':
+   case 'HOLA':
+     $response="¿Qué tal estás?";
+     sendMessage($chatId, $response);
+     $response="Mi nombre es Espinete 🦔, un mito televiso de los '80";
+     sendMessage($chatId, $response);
+     $response="Soy un experto en ciberseguridad, especialmente en el campo de la criptografía 🏴‍☠️🐉";
+     sendMessage($chatId, $response);
+     echo exec ($espi_inicio2);
+     $response="Para comenzar el reto criptográfico, escribe el comando que utilizas en Linux para loguearte como superusuario...";
+     sendMessage($chatId, $response);
+   break;
+   
+ case 'sudo':
+ break;  
     case '/ayuda':
         $response = "Tranquilo, estoy contigo.";
         sendMessage($chatId, $response);
