@@ -10,11 +10,13 @@ $modo = 0;
  
 echo "que pasa neng";
 
+$response = "que pasa neeeng";
+
 $chatId = $update["message"]["chat"]["id"];
-echo $chatId;
+
 $pepe2 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/cartel1.jpg" -F caption="TheImage" > /dev/null &';
 
-echo $pepe2;
+
 
 $chatType = $update["message"]["chat"]["type"];
 $userId = $update["message"]['from']['id'];
