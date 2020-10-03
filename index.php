@@ -105,7 +105,9 @@ switch ($command) {
   break;
   
  case $prueba:
- case "asterixyobelix":
+ case "asterix%20y%20obelix":
+   case "asterix y obelix":
+
  case 'Asterix y Obelix':
   echo exec ($img_asterix);
    echo exec ($espi_inicio2);
