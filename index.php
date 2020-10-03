@@ -49,8 +49,30 @@ switch ($command) {
         break;
     case 'fotos':
       $response="fotooooooooooooooooooos";
-  curl -X  POST "https://api.telegram.org/bot"<TOKEN>"/sendPhoto" -F chat_id="<ID>" -F photo="<RUTA DE LA IMAGEN EN INTERNET>"
 
+$bot_url    = $website;
+$url        = $bot_url . "sendPhoto?chat_id=" . $chat_id ;
+
+$post_fields = array('chat_id'   => $chat_id,
+    'photo'     => new CURLFile(realpath("https://telegrambottetuan.herokuapp.com/animales/cartel1.jpg"))
+);
+
+$ch = curl_init(); 
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    "Content-Type:multipart/form-data"
+));
+curl_setopt($ch, CURLOPT_URL, $url); 
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields); 
+$output = curl_exec($ch);
+  
+  
+  
+  
+  
+  
+  
+  
         sendMessage($chatId, $response);
         break;
     case '/noticias':
