@@ -59,6 +59,14 @@ switch ($command) {
    break;
    
  case 'sudo':
+        $response="Obtiene las iniciales de las siguientes 5️⃣ preguntas para obtener el código de cifrado";
+       sendMessage($chatId, $response);
+  // dormir durante 10 segundos
+sleep(10);
+        $response="No tienen porque estar en orden...";
+       sendMessage($chatId, $response);
+
+   
  break;  
     case '/ayuda':
         $response = "Tranquilo, estoy contigo.";
