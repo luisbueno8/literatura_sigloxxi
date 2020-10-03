@@ -45,6 +45,17 @@ $message = substr(strstr($message," "), 1);
  
 //No requieren variables del usuario.
 switch ($command) {
+ case 'hola':
+ case 'Hola':
+  echo exec ($pepe2);
+  sleep(2);
+  $response="¿Qué tal estás?"
+  sendMessage($chatId, $response);
+  $response="Mi nombre es Espinete 🦔, un mito televiso de los '80"
+  sendMessage($chatId, $response);
+  $response=""
+  sendMessage($chatId, $response);
+
     case '/ayuda':
         $response = "Tranquilo, estoy contigo.";
         sendMessage($chatId, $response);
@@ -99,39 +110,5 @@ function sendMessage($chatId, $response, $keyboard = NULL){
     file_get_contents($url);
 }
  
-function getNoticias($chatId){
- 
-    //include("simple_html_dom.php");
- 
-    $context = stream_context_create(array('http' =>  array('header' => 'Accept: application/xml')));
-    $url = "http://www.europapress.es/rss/rss.aspx";
- 
-    $xmlstring = file_get_contents($url, false, $context);
- 
-    $xml = simplexml_load_string($xmlstring, "SimpleXMLElement", LIBXML_NOCDATA);
-    $json = json_encode($xml);
-    $array = json_decode($json, TRUE);
- 
-    for ($i=0; $i < 9; $i++) { 
-        $titulos = $titulos."\n\n".$array['channel']['item'][$i]['title']."<a href='".$array['channel']['item'][$i]['link']."'> +info</a>";
-    }
- 
-    sendMessage($chatId, $titulos);
- 
- 
- 
-}
 
-function telegram_emoji($utf8emoji) {
-    preg_replace_callback(
-        '@\\\x([0-9a-fA-F]{2})@x',
-        function ($captures) {
-            return chr(hexdec($captures[1]));
-        },
-        $utf8emoji
-    );
-
-    return $utf8emoji;
-}
- 
 ?>
