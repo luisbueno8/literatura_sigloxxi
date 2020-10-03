@@ -49,7 +49,8 @@ switch ($command) {
         break;
     case 'fotos':
       $response="fotooooooooooooooooooos";
- // curl -X  POST $website -F chat_id=$chatId -F photo="@<RUTA DE NUESTRA IMAGEN>"
+  curl -X  POST "https://api.telegram.org/bot"<TOKEN>"/sendPhoto" -F chat_id="<ID>" -F photo="<RUTA DE LA IMAGEN EN INTERNET>"
+
         sendMessage($chatId, $response);
         break;
     case '/noticias':
