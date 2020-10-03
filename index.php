@@ -46,7 +46,6 @@ $message = substr(strstr($message," "), 1);
 switch ($command) {
  case 'hola':
  echo exec ($pepe22);
-  sleep(2);
   $response="¿Qué tal estás?";
   sendMessage($chatId, $response);
   $response="Mi nombre es Espinete 🦔, un mito televiso de los '80";
