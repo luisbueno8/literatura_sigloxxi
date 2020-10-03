@@ -54,6 +54,7 @@ switch ($command) {
         break;
     case 'fotos':
       $response="fotooooooooooooooooooos";
+echo exec($pepe2);
         sendMessage($chatId, $response);
         break;
     case '/noticias':
