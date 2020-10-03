@@ -38,8 +38,7 @@ $agg = json_encode($update, JSON_PRETTY_PRINT);
  
  
 //Extraemos el Comando
-//$arr = explode(' ',trim($message));
-$arr = trim($message);
+$arr = explode(' ',trim($message));
 $command = $arr[0];
  
 $message = substr(strstr($message," "), 1);
