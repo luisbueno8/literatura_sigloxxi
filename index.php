@@ -104,10 +104,12 @@ switch ($command) {
        sendMessage($chatId, $response);
   break;
   
-   case 'asterix y obelix':
-   case 'Asterix y Obelix':
-echo exec ($img_asterix);
-echo exec ($espi_inicio2);
+ case 'asterix y obelix':
+ case 'Asterix y Obelix':
+  echo exec ($img_asterix);
+   echo exec ($espi_inicio2);
+         $response="A este ritmo tu profe Luis va a estar orgulloso de tí";
+       sendMessage($chatId, $response);
 
   break;
   
