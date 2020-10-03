@@ -50,30 +50,15 @@ switch ($command) {
     case 'fotos':
       $response="fotooooooooooooooooooos";
 
-$bot_url    = $website;
-$url        = $bot_url . "sendPhoto?chat_id=" . $chat_id ;
-
-$post_fields = array('chat_id'   => $chat_id,
-    'photo'     => new CURLFile(realpath("https://telegrambottetuan.herokuapp.com/animales/cartel1.jpg"))
-);
-
-$ch = curl_init(); 
-curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-    "Content-Type:multipart/form-data"
-));
-curl_setopt($ch, CURLOPT_URL, $url); 
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields); 
-$output = curl_exec($ch);
-  print $output;
-  
-  
-  
+$BASH_Command='curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='$chatID'" -F photo="https://telegrambottetuan.herokuapp.com/animales/cartel1.jpg" -F caption="TheImage" > /dev/null &';
+echo $BASH_Command;
+echo exec($BASH_Command);
   
   
   
   
         sendMessage($chatId, $response);
+          sendMessage($chatId, $BASH_Command);
         break;
     case '/noticias':
         getNoticias($chatId);
