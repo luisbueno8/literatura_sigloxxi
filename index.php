@@ -54,15 +54,13 @@ switch ($command) {
         break;
     case 'fotos':
       $response="fotooooooooooooooooooos";
-  
-  $utf8emoji = '\xF0\x9F\x98\x81';
-  
-  //$telegramReadyResponse = 'Hi user ' . telegram_emoji($utf8emoji);
-  //echo exec($pepe2);
+
+
         sendMessage($chatId, $response);
   
-        sendMessage ($chatId, telegram_emoji($utf8emoji));
-        break;
+$pepe3 = 'curl -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendMessage" -d "chat_id=".$chatId."&text=%F0%9F%98%80&parse_modwarninge=Markdown"';
+echo exec ($pepe3); 
+ break;
     case '/noticias':
         getNoticias($chatId);
         break;
