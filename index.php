@@ -57,9 +57,11 @@ switch ($command) {
   
   $utf8emoji = '\xF0\x9F\x98\x81';
   
-  $telegramReadyResponse = 'Hi user ' . telegram_emoji($utf8emoji);
+  //$telegramReadyResponse = 'Hi user ' . telegram_emoji($utf8emoji);
   //echo exec($pepe2);
         sendMessage($chatId, $response);
+  
+        sendMessage ($chatId, telegram_emoji($utf8emoji));
         break;
     case '/noticias':
         getNoticias($chatId);
