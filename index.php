@@ -56,6 +56,7 @@ switch ($command) {
       $response="fotooooooooooooooooooos";
 
 
+
         sendMessage($chatId, $response);
   echo exec($pepe2);
 
@@ -67,7 +68,9 @@ echo exec ($pepe3);
  case '%F0%9F%98%B7&parse_modwarninge=Markdown':
   sendMessage($chatId, "BIEEEEEN");
    break;
-
+ case '☎️':
+  sendmessage ($chatId, "telefoooon");
+  break;
   
    case '%F0%9F%98%B7':
   sendMessage($chatId, "BIEEEEEN");
