@@ -54,7 +54,7 @@ switch ($command) {
         break;
     case 'fotos':
       $response="fotooooooooooooooooooos";
-echo exec($pepe2);
+  //echo exec($pepe2);
         sendMessage($chatId, $response);
         break;
     case '/noticias':
@@ -100,6 +100,18 @@ function getNoticias($chatId){
  
  
  
+}
+
+function telegram_emoji($utf8emoji) {
+    preg_replace_callback(
+        '@\\\x([0-9a-fA-F]{2})@x',
+        function ($captures) {
+            return chr(hexdec($captures[1]));
+        },
+        $utf8emoji
+    );
+
+    return $utf8emoji;
 }
  
 ?>
