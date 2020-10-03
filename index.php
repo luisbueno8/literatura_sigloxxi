@@ -64,7 +64,12 @@ $pepe3 = 'curl -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjI
 echo exec ($pepe3); 
  break;
   
- case '%F0%9F%98%80&parse_modwarninge=Markdown':
+ case '%F0%9F%98%B7&parse_modwarninge=Markdown':
+  sendMessage($chatId, "BIEEEEEN");
+   break;
+
+  
+   case '%F0%9F%98%B7':
   sendMessage($chatId, "BIEEEEEN");
    break;
     case '/noticias':
