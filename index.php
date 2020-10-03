@@ -58,7 +58,9 @@ switch ($command) {
 
         sendMessage($chatId, $response);
   echo exec($pepe2);
-$pepe3 = 'curl -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendMessage" -d "chat_id=".$chatId."&text=%F0%9F%98%80&parse_modwarninge=Markdown"';
+
+//$pepe2 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/cartel1.jpg" -F caption="TheImage" > /dev/null &';
+$pepe3 = 'curl -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendMessage" -d "chat_id='.$chatId.'&text=%F0%9F%98%80&parse_modwarninge=Markdown"';
 echo exec ($pepe3); 
  break;
     case '/noticias':
