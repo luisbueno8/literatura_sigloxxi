@@ -59,6 +59,8 @@ switch ($command) {
    break;
    
  case 'sudo':
+ case 'Sudo':
+ case 'SUDO':
         $response="Obtiene las iniciales de las siguientes 5️⃣ preguntas para obtener el nombre del código de cifrado";
        sendMessage($chatId, $response);
 
@@ -71,7 +73,7 @@ switch ($command) {
        $response="1. Primer dígito de la IP de la web del IES Tetuán de las Victorias";
        sendMessage($chatId, $response);
        sleep (1);
-       $response="2. El nombre de dominio que corresponde a la IP 194.179.53.211";
+       $response="2. El nombre de dominio que corresponde a la IP 188. 165. 131. 65";
        sendMessage($chatId, $response);
        sleep (1);
        $response="3. El DNI se puede encontrar en este formato";
@@ -87,9 +89,21 @@ switch ($command) {
        sendMessage($chatId, $response);
        $response="🤔";
        sendMessage($chatId, $response);
-
-  
+ 
  break;  
+  
+ case 'morse':
+ case 'MORSE':
+ case 'Morse':
+       $response="A este ritmo tu profe Luis va a estar orgulloso de tí";
+       sendMessage($chatId, $response);
+       $response="El siguiente mensaje está cifrado en Morse, obtiene la clave secreta 🔑...";
+       sendMessage($chatId, $response);
+       $response="  .- ... - .-. .. -..- / -.-- / --- -... .-.. .. -..- .-.-. ";
+       sendMessage($chatId, $response);
+  break;
+  
+  
     case '/ayuda':
         $response = "Tranquilo, estoy contigo.";
         sendMessage($chatId, $response);
