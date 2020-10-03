@@ -11,6 +11,8 @@ $modo = 0;
 echo "que pasa neng";
 
 $chatId = $update["message"]["chat"]["id"];
+echo $chatId;
+
 $chatType = $update["message"]["chat"]["type"];
 $userId = $update["message"]['from']['id'];
 $firstname = $update["message"]['from']['username'];
