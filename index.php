@@ -101,22 +101,32 @@ switch ($command) {
        sendMessage($chatId, $response);
        $response="El siguiente mensaje está cifrado en Morse, obtiene la clave secreta 🔑...";
        sendMessage($chatId, $response);
-       $response="  .- ... - . .-. .. -..- / -.-- / --- -... . .-.. .. -..- .-.-.  ";
+       $response=" .- ... - . .-. .. -..- .---- --- -... . .-.. .. -..- .---- .. -.. . ..-. .. -..- .-.-. ";
        sendMessage($chatId, $response);
   break;
   
- case $prueba:
- case "asterix%20y%20obelix":
-   case "asterix y obelix":
-
- case 'Asterix y Obelix':
-  echo exec ($img_asterix);
-   echo exec ($espi_inicio2);
-         $response="A este ritmo tu profe Luis va a estar orgulloso de tí";
+ case 'asterix1obelix1idefix':
+         echo exec ($img_asterix);
+         $response="¿Donde vivían nuestros entrañables amigos?";
        sendMessage($chatId, $response);
-
   break;
   
+   case 'Francia':
+     case 'francia':
+         $response="Necesito una respuesta un poco más gráfica...😷🤥🧐🙃";
+       sendMessage($chatId, $response);
+  break;  
+
+ case '🇫🇷':
+         $response="Allons enfants de la Patrie. Le jour de gloire est arrivé! 🎵 🎵";  
+       sendMessage($chatId, $response);
+       $response="Vas por el buen camino compañero, a este ritmo cambiarán el IES Tetuán de las Victorias a IES ".$username."";  
+       sendMessage($chatId, $response);
+         $response="👏";  
+       sendMessage($chatId, $response);
+
+ 
+  break;
   
     case '/ayuda':
         $response = "Tranquilo, estoy contigo.";
