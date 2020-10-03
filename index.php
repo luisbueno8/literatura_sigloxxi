@@ -47,6 +47,10 @@ switch ($command) {
         $keyboard = '["Gracias"],["Pos Ok"]';
         sendMessage($chatId, $response,$keyboard);
         break;
+    case 'fotos':
+      $response="fotooooooooooooooooooos";
+        sendMessage($chatId, $response);
+        break;
     case '/noticias':
         getNoticias($chatId);
         break;
