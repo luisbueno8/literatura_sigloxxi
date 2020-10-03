@@ -54,6 +54,10 @@ switch ($command) {
         break;
     case 'fotos':
       $response="fotooooooooooooooooooos";
+  
+  $utf8emoji = '\xF0\x9F\x98\x81';
+  
+  $telegramReadyResponse = 'Hi user ' . telegram_emoji($utf8emoji);
   //echo exec($pepe2);
         sendMessage($chatId, $response);
         break;
