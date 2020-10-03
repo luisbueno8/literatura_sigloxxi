@@ -56,7 +56,7 @@ switch ($command) {
   sendMessage($chatId, $response);
   $response="Soy un experto en ciberseguridad, especialmente en el campo de la criptografía 🏴‍☠️🐉. "
   sendMessage($chatId, $response);
-
+break;
     case '/ayuda':
         $response = "Tranquilo, estoy contigo.";
         sendMessage($chatId, $response);
