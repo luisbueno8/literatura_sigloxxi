@@ -59,14 +59,36 @@ switch ($command) {
    break;
    
  case 'sudo':
-        $response="Obtiene las iniciales de las siguientes 5️⃣ preguntas para obtener el código de cifrado";
-       sendMessage($chatId, $response);
-  // dormir durante 10 segundos
-sleep(10);
-        $response="No tienen porque estar en orden...";
+        $response="Obtiene las iniciales de las siguientes 5️⃣ preguntas para obtener el nombre del código de cifrado";
        sendMessage($chatId, $response);
 
-   
+        $response="No tienen porque estar en orden...";
+       sendMessage($chatId, $response);
+        $response="🧑🏽‍💻";
+       sendMessage($chatId, $response);
+       sleep(5);
+       
+       $response="1. Primer dígito de la IP de la web del IES Tetuán de las Victorias";
+       sendMessage($chatId, $response);
+       sleep (1);
+       $response="2. El nombre de dominio que corresponde a la IP 194.179.53.211";
+       sendMessage($chatId, $response);
+       sleep (1);
+       $response="3. El DNI se puede encontrar en este formato";
+       sendMessage($chatId, $response);
+       sleep (1);
+       $response="4. A la dirección física de un ordenador se la llama de esta forma...";
+       sendMessage($chatId, $response);
+       sleep (1);
+       $response="5. Posibilidad de que una amenaza se convierta en un ataque.";
+       sendMessage($chatId, $response);
+       sleep (2);
+       $response="¿Cuál es el cifrado utilizado?";
+       sendMessage($chatId, $response);
+       $response="🤔";
+       sendMessage($chatId, $response);
+
+  
  break;  
     case '/ayuda':
         $response = "Tranquilo, estoy contigo.";
