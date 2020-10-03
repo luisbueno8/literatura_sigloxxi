@@ -132,6 +132,8 @@ switch ($command) {
      case 'Cesar':
      case 'cesar':
        case 'césar':
+          $response = "Tranquilo, estoy contigo.";
+        sendMessage($chatId, $response);
    echo exec ($julio);
   break;
   
