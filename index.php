@@ -104,7 +104,7 @@ switch ($command) {
        sendMessage($chatId, $response);
   break;
   
- case "asterix y obelix":
+ case "asterixyobelix":
  case 'Asterix y Obelix':
   echo exec ($img_asterix);
    echo exec ($espi_inicio2);
