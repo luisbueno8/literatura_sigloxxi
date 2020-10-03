@@ -119,7 +119,7 @@ switch ($command) {
  case '🇫🇷':
          $response="Allons enfants de la Patrie. Le jour de gloire est arrivé! 🎵 🎵";  
        sendMessage($chatId, $response);
-       $response="Vas por el buen camino compañero, a este ritmo cambiarán el IES Tetuán de las Victorias a IES ".$username."";  
+       $response="Vas por el buen camino compañero, a este ritmo cambiarán el IES Tetuán de las Victorias a IES ".$firstname."";  
        sendMessage($chatId, $response);
          $response="👏";  
        sendMessage($chatId, $response);
