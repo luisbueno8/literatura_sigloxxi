@@ -1,5 +1,5 @@
 <?php 
- 
+ echo "TODO CORRECTO";
 $botToken = "1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE";
  
 $website = "https://api.telegram.org/bot".$botToken;
@@ -8,15 +8,13 @@ $update = file_get_contents('php://input');
 $update = json_decode($update, TRUE);
 $modo = 0;
  
-echo "que pasa neng";
 
-$response = "que pasa neeeng";
 
 $chatId = $update["message"]["chat"]["id"];
 
 $pepe2 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/cartel1.jpg" -F caption="TheImage" > /dev/null &';
 
-$pepe22 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/sticker.webp" -F caption="TheImage" > /dev/null &';
+//$pepe22 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/sticker.webp" -F caption="TheImage" > /dev/null &';
 
 
 $chatType = $update["message"]["chat"]["type"];
@@ -47,14 +45,13 @@ $message = substr(strstr($message," "), 1);
 //No requieren variables del usuario.
 switch ($command) {
  case 'hola':
- case 'Hola':
-  echo exec ($pepe22);
-  sleep(2);
-  $response="¿Qué tal estás?"
+//  echo exec ($pepe22);
+  //sleep(2);
+  $response="¿Qué tal estás?";
   sendMessage($chatId, $response);
-  $response="Mi nombre es Espinete 🦔, un mito televiso de los '80"
+  $response="Mi nombre es Espinete 🦔, un mito televiso de los '80";
   sendMessage($chatId, $response);
-  $response="Soy un experto en ciberseguridad, especialmente en el campo de la criptografía 🏴‍☠️🐉. "
+  $response="Soy un experto en ciberseguridad, especialmente en el campo de la criptografía 🏴‍☠️🐉. ";
   sendMessage($chatId, $response);
 break;
     case '/ayuda':
