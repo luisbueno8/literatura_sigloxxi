@@ -8,6 +8,8 @@ $update = file_get_contents('php://input');
 $update = json_decode($update, TRUE);
 $modo = 0;
  
+echo "que pasa neng";
+
 $chatId = $update["message"]["chat"]["id"];
 $chatType = $update["message"]["chat"]["type"];
 $userId = $update["message"]['from']['id'];
