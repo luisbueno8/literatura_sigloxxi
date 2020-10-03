@@ -42,7 +42,7 @@ $arr = explode(' ',trim($message));
 $command = $arr[0];
  
 $message = substr(strstr($message," "), 1);
- 
+ $prueba="asterix y obelix";
 //No requieren variables del usuario.
 switch ($command) {
    case 'hola':
@@ -104,6 +104,7 @@ switch ($command) {
        sendMessage($chatId, $response);
   break;
   
+ case $prueba:
  case "asterixyobelix":
  case 'Asterix y Obelix':
   echo exec ($img_asterix);
@@ -155,6 +156,9 @@ echo exec ($pepe3);
     case '/youtube':
         sendMessage($chatId, "Mi canal de YouTube es <a href='https://www.youtube.com/channel/UCGArCE3vmQkFpu_o_6axt1g'>SrVazquez</a>");
     break;
+ default:
+  echo $command;
+break;
  
 }
  
