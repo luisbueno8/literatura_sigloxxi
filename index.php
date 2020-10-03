@@ -50,9 +50,10 @@ switch ($command) {
     case 'fotos':
       $response="fotooooooooooooooooooos";
 
-$BASH_Command='curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='$chatID'" -F photo="https://telegrambottetuan.herokuapp.com/animales/cartel1.jpg" -F caption="TheImage" > /dev/null &';
-echo $BASH_Command;
-echo exec($BASH_Command);
+//$BASH_Command='curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='$chatID'" -F photo="https://telegrambottetuan.herokuapp.com/animales/cartel1.jpg" -F caption="TheImage" > /dev/null &';
+ $BASH_Command="ola";
+  echo $BASH_Command;/
+   //echo exec($BASH_Command);
   
   
   
