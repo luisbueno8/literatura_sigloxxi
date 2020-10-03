@@ -14,7 +14,7 @@ $chatId = $update["message"]["chat"]["id"];
 
 $pepe2 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/cartel1.jpg" -F caption="TheImage" > /dev/null &';
 
-$pepe22 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/sticker.webp" -F caption="TheImage" > /dev/null &';
+$espi_inicio = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/espi.gif" -F caption="TheImage" > /dev/null &';
 
 
 $chatType = $update["message"]["chat"]["type"];
@@ -45,8 +45,7 @@ $message = substr(strstr($message," "), 1);
 //No requieren variables del usuario.
 switch ($command) {
  case 'hola':
- echo exec ($pepe22);
-   echo exec ($pepe2);
+ echo exec ($espi_inicio);
 
   $response="¿Qué tal estás?";
   sendMessage($chatId, $response);
