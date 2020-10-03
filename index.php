@@ -49,7 +49,7 @@ switch ($command) {
         break;
     case 'fotos':
       $response="fotooooooooooooooooooos";
-  curl -X  POST $website -F chat_id=$chatId -F photo="@<RUTA DE NUESTRA IMAGEN>"
+ // curl -X  POST $website -F chat_id=$chatId -F photo="@<RUTA DE NUESTRA IMAGEN>"
         sendMessage($chatId, $response);
         break;
     case '/noticias':
