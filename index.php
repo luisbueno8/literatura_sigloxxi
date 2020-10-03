@@ -53,13 +53,7 @@ switch ($command) {
         break;
     case 'fotos':
       $response="fotooooooooooooooooooos";
-
-  
-  
-  
-  
         sendMessage($chatId, $response);
-          sendMessage($chatId, $BASH_Command);
         break;
     case '/noticias':
         getNoticias($chatId);
