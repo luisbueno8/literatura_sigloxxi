@@ -16,7 +16,8 @@ $pepe2 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7
 
 $espi_inicio2 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/espi2.jpeg" -F caption="Y amigo de Don Pimpón 💜" > /dev/null &';
 $img_asterix  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/asterix.jpg" -F caption="Asterix y Obelix" > /dev/null &';
-
+$aldea  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/lupaasterix-1200x813.jpg" -F caption="El enemigo de la aldea gala nos permitirá conocer el siguiente códido de codificación..." > /dev/null &';
+$julio  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/lupaasterix-1200x813.jpg" -F caption="CRACK" > /dev/null &';
 
 $chatType = $update["message"]["chat"]["type"];
 $userId = $update["message"]['from']['id'];
@@ -119,13 +120,21 @@ switch ($command) {
  case '🇫🇷':
          $response="Allons enfants de la Patrie. Le jour de gloire est arrivé! 🎵 🎵";  
        sendMessage($chatId, $response);
-       $response="Vas por el buen camino compañero, a este ritmo cambiarán el IES Tetuán de las Victorias a IES ".$firstname."";  
+       $response="Vas por el buen camino compañero, a este ritmo cambiarán el nombre del IES Tetuán de las Victorias a IES ".$firstname."";  
        sendMessage($chatId, $response);
          $response="👏";  
-       sendMessage($chatId, $response);
-
- 
+       sendMessage($chatId, $response); 
+       sleep (2);
+     echo exec ($aldea);
   break;
+  
+   case 'César':
+     case 'Cesar':
+     case 'cesar':
+       case 'césar':
+   echo exec ($julio);
+  break;
+  
   
     case '/ayuda':
         $response = "Tranquilo, estoy contigo.";
