@@ -141,7 +141,7 @@ switch ($command) {
    echo "🏆";
   echo "[ ✊ Sticker ]";
     sleep (1);
-    echo "En ese título está escondido el desplazamiento para descifrar el siguiente mensaje codificado en César..." 
+    echo "En ese título está escondido el desplazamiento para descifrar el siguiente mensaje codificado en César...";
    echo exec ($zidane);
   break;
   
