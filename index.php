@@ -137,13 +137,15 @@ switch ($command) {
        case 'césar':
    echo exec ($julio);
        sleep (5);
-  
-  
-   echo "En 2002, Zinedine Cidan metió el gol que permitió al Real Madrid ganar la Champions League";
-   echo "🏆";
-  echo "[ ✊ Sticker ]";
+       $response="En 2002, Zinedine Cidan metió el gol que permitió al Real Madrid ganar la Champions League";
+       sendMessage($chatId, $response);
+       $response="🏆";
+         sendMessage($chatId, $response);
+       $response="[ ✊ Sticker ]";
+         sendMessage($chatId, $response);
     sleep (1);
-    echo "En ese título está escondido el desplazamiento para descifrar el siguiente mensaje codificado en César...";
+  $response="En ese título está escondido el desplazamiento para descifrar el siguiente mensaje codificado en César...";
+           sendMessage($chatId, $response);
    echo exec ($zidane);
   break;
   
