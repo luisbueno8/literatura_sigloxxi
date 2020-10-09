@@ -136,6 +136,12 @@ switch ($command) {
      case 'cesar':
        case 'césar':
    echo exec ($julio);
+       sleep (5);
+   echo "En 2002, Zinedine Cidan metió el gol que permitió al Real Madrid ganar la Champions League";
+   echo "🏆";
+  echo "[ ✊ Sticker ]";
+    sleep (1);
+    echo "En ese título está escondido el desplazamiento para descifrar el siguiente mensaje codificado en César..." 
    echo exec ($zidane);
   break;
   
