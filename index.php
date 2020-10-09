@@ -18,7 +18,7 @@ $espi_inicio2 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_
 $img_asterix  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/asterix.jpg" -F caption="Asterix y Obelix" > /dev/null &';
 $aldea  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/lupaasterix-1200x813.jpg" -F caption="El enemigo de la aldea gala nos permitirá conocer el siguiente códido de codificación..." > /dev/null &';
 $julio  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/julio.jpeg" -F caption="CRACK" > /dev/null &';
-$zidane  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/AXry.gif" -F caption="CRACK" > /dev/null &';
+$zidane  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/AXry.gif" -F caption="CIDAN, segundos antes de que metiera gol" > /dev/null &';
 
 
 
@@ -141,14 +141,20 @@ switch ($command) {
        sendMessage($chatId, $response);
        $response="🏆";
          sendMessage($chatId, $response);
-       $response="[ ✊ Sticker ]";
-         sendMessage($chatId, $response);
     sleep (1);
   $response="En ese título está escondido el desplazamiento para descifrar el siguiente mensaje codificado en César...";
            sendMessage($chatId, $response);
    echo exec ($zidane);
   break;
   
+ case '9':
+  $response="Parece que ya dispones de toda la información para descifrar el siguiente mensaje 🔍:";
+  sendMessage($chatId, $response);
+  $response="pccyb://kqc.th/2Q73nsH";
+  sendMessage($chatId, $response);
+  //https://bit.ly/2I73ekY
+  
+
   
     case '/ayuda':
         $response = "Tranquilo, estoy contigo.";
