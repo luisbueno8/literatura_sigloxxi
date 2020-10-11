@@ -186,34 +186,13 @@ case 'leon':
   sleep(3);
   $response = "Con la clave 🦁, descifra el siguiente código Vigènere:";
   sendMessage($chatId, $response);
- $response = "vezv wmbhi-kdt";
+ $response = "vezvWmbhi-kdt";
   sendMessage($chatId, $response);
    $response = "🐉🐉🐉🐉🐉🐉";
   sendMessage($chatId, $response);
 break;
   
- case 'kali linux-gpg':
-    echo exec ($kali);
-  sleep (3);
-  $response ="A partir del comando y la distribución que se indica, descifra el siguiente fichero...";
-    sendMessage($chatId, $response);
-sleep (1);
-    $response ="¿Puedes abrirlo sin conocer la clave?🤔";
-    sendMessage($chatId, $response);
-  sleep (3);
-  $response="Se rumorea que la clave es el año de nacimiento de Luis...";
-      sendMessage($chatId, $response);
-    $response="El fichero 👇👇";
-      sendMessage($chatId, $response);
-   $response="https://bit.ly/3iJoLgk";
-        sendMessage($chatId, $response);
-    break;
-    default:
-      $response="".$firstname.", hablas como Don Pimpón";
-        sendMessage($chatId, $response);
-    default:
-      $response="No entiendo nada";
-        sendMessage($chatId, $response);
+
  
 }
  
