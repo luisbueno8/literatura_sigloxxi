@@ -210,7 +210,8 @@ sleep (1);
    $response="https://bit.ly/3iJoLgk";
         sendMessage($chatId, $response);
     break;
-  
+     case '/start':
+break;
       default:
       $response="".$firstname.", hablas como Don Pimpón";
         sendMessage($chatId, $response);
