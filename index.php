@@ -20,6 +20,7 @@ $aldea  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc
 $julio  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/julio.jpeg" -F caption="CRACK" > /dev/null &';
 $zidane  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/AXry.gif" -F caption="CIDAN, segundos antes de que metiera gol" > /dev/null &';
 $galletas  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/galletas.png" -F caption=" " > /dev/null &';
+$pumba  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/pumba.jpeg" -F caption="🦁, amigo".$firstname.", hakuna matata" > /dev/null &';
 
 
 
@@ -167,12 +168,27 @@ switch ($command) {
   
  case 'https://bit.ly/2I73ekY':
  case 'Https://bit.ly/2I73ekY':
+   case 'Https://bit.ly/2i73eky':
+     case 'https://bit.ly/2i73eky':
    $response="Mira a ver que te sugiere esa web...";
    sendMessage($chatId, $response);
    echo exec ($galletas);
-
-   
    break;
+  
+  
+case 'León':
+case 'Leon':
+case 'león':
+case 'leon':
+  echo exec ($pumba);
+  $response = "Con la clave 🦁, descifra el siguiente código Vigènere:";
+  sendMessage($chatId, $response);
+ $response = "vezv wmbhi-kdt";
+  sendMessage($chatId, $response);
+   $response = "🐉🐉🐉🐉🐉🐉";
+  sendMessage($chatId, $response);
+   
+break;
 
   
     case '/ayuda':
