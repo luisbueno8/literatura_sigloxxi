@@ -181,14 +181,19 @@ case 'Leon':
 case 'león':
 case 'leon':
   echo exec ($pumba);
+  sleep(3);
   $response = "Con la clave 🦁, descifra el siguiente código Vigènere:";
   sendMessage($chatId, $response);
  $response = "vezv wmbhi-kdt";
   sendMessage($chatId, $response);
    $response = "🐉🐉🐉🐉🐉🐉";
   sendMessage($chatId, $response);
-   
 break;
+  
+ case 'kali linux-gpg':
+  $response 
+  
+  break;
 
   
     case '/ayuda':
