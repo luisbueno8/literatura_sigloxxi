@@ -19,6 +19,7 @@ $img_asterix  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_
 $aldea  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/lupaasterix-1200x813.jpg" -F caption="El enemigo de la aldea gala nos permitirá conocer el siguiente códido de codificación..." > /dev/null &';
 $julio  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/julio.jpeg" -F caption="CRACK" > /dev/null &';
 $zidane  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/AXry.gif" -F caption="CIDAN, segundos antes de que metiera gol" > /dev/null &';
+$galletas  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/galletas.png" -F caption="" > /dev/null &';
 
 
 
@@ -69,7 +70,7 @@ switch ($command) {
  case 'sudo':
  case 'Sudo':
  case 'SUDO':
-        $response="Obtiene las iniciales de las siguientes 5️⃣ preguntas para obtener el nombre del código de cifrado";
+        $response="Obtiene las iniciales de las siguientes 5️⃣ respuestas para obtener el nombre del código de cifrado";
        sendMessage($chatId, $response);
 
         $response="No tienen porque estar en orden...";
@@ -152,7 +153,7 @@ switch ($command) {
     sleep (2);
   $response="En ese título está escondido el desplazamiento para descifrar el siguiente mensaje codificado en César...";
            sendMessage($chatId, $response);
-  sleep (2);
+  sleep (4);
    echo exec ($zidane);
   break;
   
@@ -162,7 +163,16 @@ switch ($command) {
   $response="pccyb://kqc.th/2Q73nsH";
   sendMessage($chatId, $response);
   //https://bit.ly/2I73ekY
+  break;
   
+ case 'https://bit.ly/2I73ekY':
+ case 'Https://bit.ly/2I73ekY':
+   $response="Mira a ver que te sugiere esa web...
+   sendMessage($chatId, $response);
+   echo exec ($galletas);
+
+   
+   break;
 
   
     case '/ayuda':
