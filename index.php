@@ -46,7 +46,6 @@ $arr = explode(' ',trim($message));
 $command = $arr[0];
  
 $message = substr(strstr($message," "), 1);
- $prueba="asterix y obelix";
 //No requieren variables del usuario.
 switch ($command) {
    case 'hola':
@@ -106,16 +105,19 @@ switch ($command) {
  case 'Morse':
        $response="A este ritmo tu profe Luis va a estar orgulloso de tí";
        sendMessage($chatId, $response);
+       sleep (1);
        $response="El siguiente mensaje está cifrado en Morse, obtiene la clave secreta 🔑...";
        sendMessage($chatId, $response);
+       sleep (1);
        $response=" .- ... - . .-. .. -..- .---- --- -... . .-.. .. -..- .---- .. -.. . ..-. .. -..- .-.-. ";
        sendMessage($chatId, $response);
   break;
   
  case 'asterix1obelix1idefix':
          echo exec ($img_asterix);
-         $response="¿Donde vivían nuestros entrañables amigos?";
-       sendMessage($chatId, $response);
+         sleep (2);
+         $response="¿En qué territorio actual vivían nuestros entrañables amigos?";
+         sendMessage($chatId, $response);
   break;
   
    case 'Francia':
