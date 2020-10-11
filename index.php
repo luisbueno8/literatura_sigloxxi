@@ -194,6 +194,9 @@ break;
    case 'kaliLinux-gpg':
     echo exec ($kali);
   sleep (3);
+    $response = "Última prueba para ser un verdadero hacker como yo 🏴‍☠️ 😎";
+    sendMessage($chatId, $response);
+    sleep (1);
   $response = "A partir del comando y la distribución que se indica, descifra el siguiente fichero...";
     sendMessage($chatId, $response);
 sleep (1);
@@ -207,6 +210,12 @@ sleep (1);
    $response="https://bit.ly/3iJoLgk";
         sendMessage($chatId, $response);
     break;
+  
+      default:
+      $response="".$firstname.", hablas como Don Pimpón";
+        sendMessage($chatId, $response);
+      $response="No entiendo nada";
+        sendMessage($chatId, $response);
 
 }
  
