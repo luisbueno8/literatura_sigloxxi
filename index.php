@@ -20,7 +20,8 @@ $aldea  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc
 $julio  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/julio.jpeg" -F caption="CRACK" > /dev/null &';
 $zidane  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/AXry.gif" -F caption="CIDAN, segundos antes de que metiera gol" > /dev/null &';
 $galletas  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/galletas.png" -F caption=" " > /dev/null &';
-$pumba  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/pumba.jpg" -F caption="🦁, amigo".$firstname.", hakuna matata" > /dev/null &';
+$pumba  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/pumba.jpg" -F caption="🦁, amigo".$
+name.", hakuna matata" > /dev/null &';
 $kali  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/kali.jpg" -F caption="", hakuna matata" > /dev/null &';
 
 
@@ -197,56 +198,22 @@ break;
   $response ="A partir del comando y la distribución que se indica, descifra el siguiente fichero...";
     sendMessage($chatId, $response);
 sleep (1);
+    $response ="¿Puedes abrirlo sin conocer la clave?🤔";
+    sendMessage($chatId, $response);
+  sleep (3);
   $response="Se rumorea que la clave es el año de nacimiento de Luis...";
       sendMessage($chatId, $response);
-
-  break;
-
-  
-    case '/ayuda':
-        $response = "Tranquilo, estoy contigo.";
+    $response="El fichero 👇👇";
+      sendMessage($chatId, $response);
+   $response="https://bit.ly/3iJoLgk";
         sendMessage($chatId, $response);
-        break;
-    case 'Lucía':
-        $response = "eres muuuuy guapa :kissing_heart:     u'\U000026C4'";
-        $keyboard = '["Gracias"],["Pos Ok"]';
-        sendMessage($chatId, $response,$keyboard);
-        break;
-    case 'fotos':
-      $response="fotooooooooooooooooooos";
-
-
-
-        sendMessage($chatId, $response);
-  echo exec($pepe2);
-
-//$pepe2 = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/cartel1.jpg" -F caption="TheImage" > /dev/null &';
-$pepe3 = 'curl -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendMessage" -d "chat_id='.$chatId.'&text=%F0%9F%98%80&parse_modwarninge=Markdown"';
-echo exec ($pepe3); 
- break;
-  
- case '%F0%9F%98%B7&parse_modwarninge=Markdown':
-  sendMessage($chatId, "BIEEEEEN");
-   break;
- case '☎️':
-  sendmessage ($chatId, "telefoooon");
-  break;
-  
-   case '%F0%9F%98%B7':
-  sendMessage($chatId, "BIEEEEEN");
-   break;
-    case '/noticias':
-        getNoticias($chatId);
-        break;
-    case '/participar': case '/participar@VazCell_bot':
-        getSorteos($chatId, $message, $userId, $firstname, $agg);
-        break;
-    case '/youtube':
-        sendMessage($chatId, "Mi canal de YouTube es <a href='https://www.youtube.com/channel/UCGArCE3vmQkFpu_o_6axt1g'>SrVazquez</a>");
     break;
- default:
-  echo $command;
-break;
+    default:
+      $response="".$firstname.", hablas como Don Pimpón";
+        sendMessage($chatId, $response);
+    default:
+      $response="No entiendo nada";
+        sendMessage($chatId, $response);
  
 }
  
