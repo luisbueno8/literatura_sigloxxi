@@ -20,8 +20,7 @@ $aldea  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc
 $julio  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/julio.jpeg" -F caption="CRACK" > /dev/null &';
 $zidane  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/AXry.gif" -F caption="CIDAN, segundos antes de que metiera gol" > /dev/null &';
 $galletas  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/galletas.png" -F caption=" " > /dev/null &';
-$pumba  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/pumba.jpg" -F caption="🦁, amigo".$
-name.", hakuna matata" > /dev/null &';
+$pumba  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/pumba.jpg" -F caption="🦁, amigo".$firs_name.", hakuna matata" > /dev/null &';
 $kali  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/kali.jpg" -F caption="", hakuna matata" > /dev/null &';
 
 
