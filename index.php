@@ -53,12 +53,15 @@ switch ($command) {
    case 'Hola':
    case 'HOLA':
      $response="¿Qué tal estás?";
+     sleep (0.5);
      sendMessage($chatId, $response);
      $response="Mi nombre es Espinete 🦔, un mito televiso de los '80";
      sendMessage($chatId, $response);
+          sleep(1);
      $response="Soy un experto en ciberseguridad, especialmente en el campo de la criptografía 🏴‍☠️🐉";
      sendMessage($chatId, $response);
      echo exec ($espi_inicio2);
+     sleep (2);
      $response="Para comenzar el reto criptográfico, escribe el comando que utilizas en Linux para loguearte como superusuario...";
      sendMessage($chatId, $response);
    break;
