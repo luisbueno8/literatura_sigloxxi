@@ -53,16 +53,16 @@ switch ($command) {
    case 'Hola':
    case 'HOLA':
      $response="¿Qué tal estás?";
-     sleep (2);
+     sleep (3);
      sendMessage($chatId, $response);
      $response="Mi nombre es Espinete 🦔, un mito televiso de los '80";
      sendMessage($chatId, $response);
-          sleep(2);
+          sleep(3);
      $response="Soy un experto en ciberseguridad, especialmente en el campo de la criptografía 🏴‍☠️🐉";
      sendMessage($chatId, $response);
-       sleep (2);
+       sleep (3);
      echo exec ($espi_inicio2);
-       sleep (2);
+       sleep (3);
      $response="Para comenzar el reto criptográfico, escribe el comando que utilizas en Linux para loguearte como superusuario...";
      sendMessage($chatId, $response);
    break;
@@ -81,19 +81,19 @@ switch ($command) {
        
        $response="1. Primer dígito de la IP de la web del IES Tetuán de las Victorias";
        sendMessage($chatId, $response);
-       sleep (1);
+       sleep (4);
        $response="2. El nombre de dominio que corresponde a la IP 188. 165. 131. 65";
        sendMessage($chatId, $response);
-       sleep (1);
+       sleep (4);
        $response="3. El DNI se puede encontrar en este formato";
        sendMessage($chatId, $response);
-       sleep (1);
+       sleep (4);
        $response="4. A la dirección física de un ordenador se la llama de esta forma...";
        sendMessage($chatId, $response);
-       sleep (1);
+       sleep (4);
        $response="5. Posibilidad de que una amenaza se convierta en un ataque.";
        sendMessage($chatId, $response);
-       sleep (2);
+       sleep (4);
        $response="¿Cuál es el cifrado utilizado?";
        sendMessage($chatId, $response);
        $response="🤔";
