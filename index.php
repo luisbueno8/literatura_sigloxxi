@@ -114,6 +114,7 @@ switch ($command) {
   break;
   
  case 'asterix1obelix1idefix':
+   case 'Asterix1obelix1idefix':
          echo exec ($img_asterix);
          sleep (2);
          $response="¿En qué territorio actual vivían nuestros entrañables amigos?";
@@ -129,11 +130,12 @@ switch ($command) {
  case '🇫🇷':
          $response="Allons enfants de la Patrie. Le jour de gloire est arrivé! 🎵 🎵";  
        sendMessage($chatId, $response);
+         sleep (1);
        $response="Vas por el buen camino compañero, a este ritmo cambiarán el nombre del IES Tetuán de las Victorias a IES ".$firstname."";  
        sendMessage($chatId, $response);
          $response="👏";  
        sendMessage($chatId, $response); 
-       sleep (2);
+       sleep (5);
      echo exec ($aldea);
   break;
   
@@ -147,9 +149,10 @@ switch ($command) {
        sendMessage($chatId, $response);
        $response="🏆";
          sendMessage($chatId, $response);
-    sleep (1);
+    sleep (2);
   $response="En ese título está escondido el desplazamiento para descifrar el siguiente mensaje codificado en César...";
            sendMessage($chatId, $response);
+  sleep (2);
    echo exec ($zidane);
   break;
   
