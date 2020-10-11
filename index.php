@@ -21,6 +21,7 @@ $julio  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc
 $zidane  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/AXry.gif" -F caption="CIDAN, segundos antes de que metiera gol" > /dev/null &';
 $galletas  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/galletas.png" -F caption=" " > /dev/null &';
 $pumba  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/pumba.jpg" -F caption="🦁, amigo".$firstname.", hakuna matata" > /dev/null &';
+$kali  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/kali.jpg" -F caption="", hakuna matata" > /dev/null &';
 
 
 
@@ -191,8 +192,14 @@ case 'leon':
 break;
   
  case 'kali linux-gpg':
-  $response 
-  
+    echo exec ($kali);
+  sleep (3);
+  $response ="A partir del comando y la distribución que se indica, descifra el siguiente fichero...";
+    sendMessage($chatId, $response);
+sleep (1);
+  $response="Se rumorea que la clave es el año de nacimiento de Luis...";
+      sendMessage($chatId, $response);
+
   break;
 
   
