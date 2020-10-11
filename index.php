@@ -191,9 +191,23 @@ case 'leon':
    $response = "🐉🐉🐉🐉🐉🐉";
   sendMessage($chatId, $response);
 break;
-  
+   case 'kaliLinux-gpg':
+    echo exec ($kali);
+  sleep (3);
+  $response = "A partir del comando y la distribución que se indica, descifra el siguiente fichero...";
+    sendMessage($chatId, $response);
+sleep (1);
+    $response = "¿Puedes abrirlo sin conocer la clave?🤔";
+    sendMessage($chatId, $response);
+  sleep (3);
+  $response="Se rumorea que la clave es el año de nacimiento de Luis...";
+      sendMessage($chatId, $response);
+    $response="El fichero 👇👇";
+      sendMessage($chatId, $response);
+   $response="https://bit.ly/3iJoLgk";
+        sendMessage($chatId, $response);
+    break;
 
- 
 }
  
  
