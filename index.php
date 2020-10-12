@@ -153,10 +153,12 @@ switch ($command) {
        $response="🏆";
          sendMessage($chatId, $response);
     sleep (2);
-  $response="En ese título está escondido el desplazamiento para descifrar el siguiente mensaje codificado en César...";
+  $response="En ese título está escondido el número que marca el desplazamiento para descifrar el siguiente mensaje codificado en César...";
            sendMessage($chatId, $response);
   sleep (4);
    echo exec ($zidane);
+    $response="¿Cuál es ese número?";
+           sendMessage($chatId, $response);
   break;
   
  case '9':
