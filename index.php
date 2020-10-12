@@ -65,14 +65,14 @@ switch ($command) {
        sleep (3);
      echo exec ($espi_inicio2);
        sleep (3);
-     $response="Para comenzar el reto criptográfico, escribe el comando que utilizas en Linux para loguearte como superusuario...";
+     $response="Para comenzar el reto criptográfico, escribe el comando que utilizas para abrir una aplicación en Linux como superusuario o administrador...";
      sendMessage($chatId, $response);
    break;
    
  case 'sudo':
  case 'Sudo':
  case 'SUDO':
-        $response="Obtiene las iniciales de las siguientes 5️⃣ respuestas para obtener el nombre del código de cifrado";
+        $response="Utiliza la primera letra de la respuesta de cada una de las siguientes 5️⃣ preguntas para obtener el nombre del código de cifrado";
        sendMessage($chatId, $response);
 
         $response="No tienen porque estar en orden...";
