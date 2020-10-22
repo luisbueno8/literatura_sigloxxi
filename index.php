@@ -198,7 +198,7 @@ break;
     $response = "Última prueba para ser un verdadero hacker como yo 🏴‍☠️ 😎";
     sendMessage($chatId, $response);
     sleep (1);
-  $response = "A partir del comando y la distribución que se indica, descifra el siguiente fichero...";
+  $response = "A partir del comando gpg y en la distribución Kali Linux (Ubuntu también valdría), descifra el siguiente fichero...";
     sendMessage($chatId, $response);
 sleep (1);
     $response = "¿Puedes abrirlo sin conocer la clave?🤔";
