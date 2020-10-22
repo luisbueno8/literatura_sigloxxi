@@ -120,7 +120,7 @@ switch ($command) {
    case 'Asterix1obelix1idefix':
          echo exec ($img_asterix);
          sleep (2);
-         $response="¿En qué territorio actual vivían nuestros entrañables amigos?";
+         $response="¿En qué territorio o país actual vivían nuestros entrañables amigos?";
          sendMessage($chatId, $response);
   break;
   
