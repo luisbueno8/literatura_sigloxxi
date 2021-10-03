@@ -164,7 +164,7 @@ switch ($command) {
  case '9':
   $response="Parece que ya dispones de toda la información para descifrar el siguiente mensaje 🔍,dímelo descifrado:";
   sendMessage($chatId, $response);
-  $response="pccyb://kqc.th/2Q73nsH";
+  $response="pccyb://kqc.th/3t5cJxK";
   sendMessage($chatId, $response);
   //https://bit.ly/2I73ekY
   break;
