@@ -169,10 +169,10 @@ switch ($command) {
   //https://bit.ly/2I73ekY
   break;
   
- case 'https://bit.ly/3t5cJxK':  
- case 'Https://bit.ly/3t5cJxK':
-   case 'Https://bit.ly/3t5cjxk':
-     case 'https://bit.ly/3t5cjxk':
+ case 'https://bit.ly/3l5tAoB':  
+ case 'Https://bit.ly/3l5tAoB':
+   case 'Https://bit.ly/3l5taob':
+     case 'https://bit.ly/3l5taob':
    $response="Mira a ver que te sugiere esa web... https://bit.ly/2I73ekY (Pista:mira el satélite)";
    sendMessage($chatId, $response);
    echo exec ($galletas);
