@@ -1,7 +1,11 @@
 <strong>hola</strong>
 
 <img src="https://github.com/luisbueno8/literatura_sigloxxi/blob/master/animales/titulo_par.png" style="max-width:60%;width:auto;height:auto;">
+<img src="https://github.com/luisbueno8/literatura_sigloxxi/blob/master/titulo_web.png" style="max-width:60%;width:auto;height:auto;">
+<img src="https://github.com/luisbueno8/literatura_sigloxxi/blob/master/titulo_web_circle.png" style="max-width:60%;width:auto;height:auto;">
 
+
+https://github.com/luisbueno8/literatura_sigloxxi/blob/master/titulo_web.png
 
 	    <p align="center"><img src="titulo_par.png" style="max-width:60%;width:auto;height:auto;"></p>
 	  <p align="center"> <a href="http://www.tiendarayovallecano.es/contenidosInteres/contacto" target="_blank"><img src="rayo.png" width="15%"></a></p>
