@@ -87,7 +87,18 @@ case 'Sudo su':
        sendMessage($chatId, $response);
   break;
   
+ case 'ocho':
+ case 'OCHO':
+ case 'Ocho':
+   $response="Respuesta correcta, ya tienes la letra O";
+   sendMessage($chatId, $response);
+   $response="🇴":
+   sendMessage($chatId, $response);
+   sleep(4);
+   $response="2. El nombre de dominio que corresponde a la IP 188. 165. 131. 65";
+   sendMessage($chatId, $response);
 
+  break;
    
 
  case 'morse':
