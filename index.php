@@ -180,6 +180,7 @@ case 'Sudo su':
   
  case 'asterix1obelix1idefix':
    case 'Asterix1obelix1idefix':
+ case 'ASTERIX1OBELIX1IDEFIX':
          echo exec ($img_asterix);
          sleep (2);
          $response="¿En qué territorio o país actual vivían nuestros entrañables amigos?";
@@ -188,15 +189,18 @@ case 'Sudo su':
   
    case 'Francia':
      case 'francia':
+ case 'FRANCIA':
          $response="Necesito una respuesta un poco más gráfica...😷🤥🧐🙃";
        sendMessage($chatId, $response);
   break;  
 
  case '🇫🇷':
+ case '🇨🇵':
+ case '🇫🇷':
          $response="Allons enfants de la Patrie. Le jour de gloire est arrivé! 🎵 🎵";  
        sendMessage($chatId, $response);
          sleep (1);
-       $response="Vas por el buen camino compañero, a este ritmo cambiarán el nombre del IES Tetuán de las Victorias a IES ".$firstname."";  
+       $response="Vas por el buen camino compañero, a este ritmo cambiarán el nombre del IES Francisco de Quevedo a IES ".$firstname."";  
        sendMessage($chatId, $response);
          $response="👏";  
        sendMessage($chatId, $response); 
@@ -208,6 +212,7 @@ case 'Sudo su':
      case 'Cesar':
      case 'cesar':
        case 'césar':
+ case 'CÉSAR':
    echo exec ($julio);
        sleep (5);
        $response="En 2002, Zinedine Cidan metió el gol que permitió al Real Madrid ganar la Champions League";
@@ -219,11 +224,14 @@ case 'Sudo su':
            sendMessage($chatId, $response);
   sleep (4);
    echo exec ($zidane);
-    $response="¿Cuál es ese número?";
+    $response="¿Cuál es ese número? (escríbelo utilizando números)";
            sendMessage($chatId, $response);
   break;
   
- case '9':
+ case 'nueve':
+   case 'Nueve':
+ case 'NUEVE':
+
   $response="Parece que ya dispones de toda la información para descifrar el siguiente mensaje 🔍,dímelo descifrado:";
   sendMessage($chatId, $response);
   $response="pccyb://kqc.th/3t5cJxK";
@@ -235,7 +243,7 @@ case 'Sudo su':
  case 'Https://bit.ly/3l5tAoB':
    case 'Https://bit.ly/3l5taob':
      case 'https://bit.ly/3l5taob':
-   $response="Mira a ver que te sugiere esa web... https://bit.ly/3l5tAoB (Pista:mira el satélite)";
+   $response="Mira a ver que te sugiere esa web... https://bit.ly/3l5tAoB (Pista:utiliza el satélite)";
    sendMessage($chatId, $response);
    echo exec ($galletas);
    break;
@@ -245,6 +253,8 @@ case 'León':
 case 'Leon':
 case 'león':
 case 'leon':
+ case 'LEÓN':
+ case 'LEON':
   echo exec ($pumba);
   sleep(3);
   $response = "Con la clave 🦁, descifra el siguiente código Vigènere:";
