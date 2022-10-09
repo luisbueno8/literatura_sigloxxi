@@ -68,6 +68,22 @@ switch ($command) {
      $response="Para comenzar el reto criptográfico, escribe el comando que utilizas para abrir una aplicación en Linux como superusuario o administrador...";
      sendMessage($chatId, $response);
    break;
+  
+case 'sudo':
+case 'Sudo':
+case 'SUDO':
+case 'SUDO SU':
+case 'sudo su':
+case 'Sudo su':
+       $response="Ahora te realizaré 5️⃣ preguntas más para que posteriormente utilices la primera letra de cada respuesta para obtener el nombre de un código de cifrado";
+       sendMessage($chatId, $response);
+       sleep(4);        
+       $response="🧑🏽‍💻";
+       sendMessage($chatId, $response);
+       sleep(2);
+       $response="1. Primer dígito de la IP del nombre de dominio elforocofrade.es";
+       sendMessage($chatId, $response);
+  break; 
    
 
  case 'morse':
