@@ -112,7 +112,7 @@ case 'Sudo su':
    $response="🇸";
    sendMessage($chatId, $response);
    sleep(4);
-       $response="3. El DNI se puede encontrar en este formato (PISTA:empieza por una vocal...)";
+       $response="3. El DNI se puede encontrar en este formato (Pista:empieza por una vocal...)";
    sendMessage($chatId, $response);
   break;
           
@@ -146,6 +146,8 @@ case 'Sudo su':
    sendMessage($chatId, $response);
   sleep (2);
       echo exec ($wanna);
+        echo exec ($dni);
+
   break;
   
  case 'ransomware':
@@ -224,7 +226,7 @@ case 'Sudo su':
            sendMessage($chatId, $response);
   sleep (4);
    echo exec ($zidane);
-    $response="¿Cuál es ese número? (escríbelo utilizando números)";
+    $response="¿Cuál es ese número? (escríbelo utilizando letras)";
            sendMessage($chatId, $response);
   break;
   
