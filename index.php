@@ -92,6 +92,8 @@ case 'Sudo su':
  case 'Ocho':
    $response="Respuesta correcta, ya tienes la letra O";
    sendMessage($chatId, $response);
+     $response="🇴";
+   sendMessage($chatId, $response);
   break;
   
    
