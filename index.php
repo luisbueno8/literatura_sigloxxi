@@ -22,6 +22,8 @@ $zidane  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuH
 $galletas  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/galletas.png" -F caption=" " > /dev/null &';
 $pumba  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/pumba.jpg" -F caption="amigo 🦁, hakuna matata" > /dev/null &';
 $kali  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/kali.jpg" -F caption="", hakuna matata" > /dev/null &';
+$salamanca  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/salamanca.jpg" -F caption="", hakuna matata" > /dev/null &';
+$dni  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/dni.png" -F caption="", hakuna matata" > /dev/null &';
 
 
 
@@ -83,7 +85,48 @@ case 'Sudo su':
        sleep(2);
        $response="1. Primer dígito de la IP del nombre de dominio elforocofrade.es";
        sendMessage($chatId, $response);
-  break; 
+  break;
+  
+ case 'ocho':
+ case 'OCHO':
+ case 'Ocho':
+   $response="Respuesta correcta, ya tienes la letra O";
+   sendMessage($chatId, $response);
+   $response="🇴":
+   sendMessage($chatId, $response);
+   sleep(4);
+   $response="2. El nombre de dominio que corresponde a la IP 188. 165. 131. 65";
+   sendMessage($chatId, $response);
+
+  break;
+  
+   case 'salamanca':
+ case 'Salamanca':
+ case 'SALAMANCA':
+    echo exec ($salamanca);
+   $response="Respuesta correcta, ya tienes la letra S";
+   $response="🇸":
+   sendMessage($chatId, $response);
+   sleep(4);
+       $response="3. El DNI se puede encontrar en este formato (PISTA:empieza por una vocal...)";
+   sendMessage($chatId, $response);
+  break;
+  
+     case 'electrónico':
+ case 'electronico':
+ case 'Electrónico':
+   case 'Electronico':
+ case 'ELECTRONICO':
+ case 'ELECTRÓNICO':
+
+    echo exec ($dni);
+   $response="Respuesta correcta, ya tienes la letra E";
+   $response="🇪":
+   sendMessage($chatId, $response);
+   sleep(4);
+       $response="4. A la dirección física de un ordenador se la llama de esta forma...";
+   sendMessage($chatId, $response);
+  break;
    
 
  case 'morse':
