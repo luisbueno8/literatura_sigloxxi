@@ -99,33 +99,6 @@ case 'Sudo su':
    sendMessage($chatId, $response);
   break;
   
- case 'salamanca':
- case 'Salamanca':
- case 'SALAMANCA':
-    echo exec ($salamanca);
-   $response="Respuesta correcta, ya tienes la letra S";
-   $response="🇸";
-   sendMessage($chatId, $response);
-   sleep(4);
-       $response="3. El DNI se puede encontrar en este formato (PISTA:empieza por una vocal...)";
-   sendMessage($chatId, $response);
-  break;
-  
-       case 'electrónico':
- case 'electronico':
- case 'Electrónico':
-   case 'Electronico':
- case 'ELECTRONICO':
- case 'ELECTRÓNICO':
-
-    echo exec ($dni);
-   $response="Respuesta correcta, ya tienes la letra E";
-   $response="🇪";
-   sendMessage($chatId, $response);
-   sleep(4);
-       $response="4. A la dirección física de un ordenador se la llama de esta forma...";
-   sendMessage($chatId, $response);
-  break;
    
 
  case 'morse':
