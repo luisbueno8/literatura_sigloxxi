@@ -174,7 +174,7 @@ case 'Sudo su':
        $response="El siguiente mensaje está cifrado en Morse, obtiene la clave secreta 🔑...";
        sendMessage($chatId, $response);
        sleep (1);
-       $response=" .- ... - . .-. .. -..- .---- --- -... . .-.. .. -..- .---- .. -.. . ..-. .. -..- .-.-. ";
+       $response=" .- ... - . .-. .. -..- .---- --- -... . .-.. .. -..- .---- .. -.. . ..-. .. -..- ";
        sendMessage($chatId, $response);
   break;
   
