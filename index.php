@@ -89,17 +89,11 @@ case 'Sudo su':
  case 'ocho':
  case 'OCHO':
  case 'Ocho':
-   $response="Ya tiene la letra O":
+   $response="Respuesta correcta, ya tienes la letra O":
    sendMessage($chatId, $response);
-      $response="🇴":
-
+   $response="🇴":
    sendMessage($chatId, $response);
-
-
-  
-  
-  
-  
+  break;
   
  case 'morse':
  case 'MORSE':
