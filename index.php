@@ -69,17 +69,19 @@ switch ($command) {
      sendMessage($chatId, $response);
    break;
    
- case 'sudo':
- case 'Sudo':
- case 'SUDO':
-        $response="Utiliza la primera letra de la respuesta de cada una de las siguientes 5️⃣ preguntas para obtener el nombre del código de cifrado";
+case 'sudo':
+case 'Sudo':
+case 'SUDO':
+case 'SUDO SU':
+case 'sudo su':
+case 'Sudo su':
+       $response="Ahora te realizaré 5️⃣ preguntas más para que posteriormente utilices la primera letra de cada respuesta para obtener el nombre de un código de cifrado";
        sendMessage($chatId, $response);
-
-        $response="No tienen porque estar en orden...";
+       sleep(4);
        sendMessage($chatId, $response);
         $response="🧑🏽‍💻";
        sendMessage($chatId, $response);
-       sleep(5);
+       sleep(2);
        
        $response="1. Primer dígito de la IP de la web del IES Tetuán de las Victorias";
        sendMessage($chatId, $response);
