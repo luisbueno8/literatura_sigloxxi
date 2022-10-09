@@ -77,33 +77,29 @@ case 'sudo su':
 case 'Sudo su':
        $response="Ahora te realizaré 5️⃣ preguntas más para que posteriormente utilices la primera letra de cada respuesta para obtener el nombre de un código de cifrado";
        sendMessage($chatId, $response);
-       sleep(4);
-       sendMessage($chatId, $response);
-        $response="🧑🏽‍💻";
+       sleep(4);        
+       $response="🧑🏽‍💻";
        sendMessage($chatId, $response);
        sleep(2);
        
-       $response="1. Primer dígito de la IP de la web del IES Tetuán de las Victorias";
+       $response="1. Primer dígito de la IP del nombre de dominio elforocofrade.es";
        sendMessage($chatId, $response);
-       sleep (4);
-       $response="2. El nombre de dominio que corresponde a la IP 188. 165. 131. 65";
-       sendMessage($chatId, $response);
-       sleep (4);
-       $response="3. El DNI se puede encontrar en este formato";
-       sendMessage($chatId, $response);
-       sleep (4);
-       $response="4. A la dirección física de un ordenador se la llama de esta forma...";
-       sendMessage($chatId, $response);
-       sleep (4);
-       $response="5. Posibilidad de que una amenaza se convierta en un ataque.";
-       sendMessage($chatId, $response);
-       sleep (4);
-       $response="¿Cuál es el cifrado utilizado?";
-       sendMessage($chatId, $response);
-       $response="🤔";
-       sendMessage($chatId, $response);
- 
- break;  
+  break;  
+  
+ case 'ocho':
+ case 'OCHO':
+ case 'Ocho':
+   $response="Ya tiene la letra O":
+   sendMessage($chatId, $response);
+      $response="🇴":
+
+   sendMessage($chatId, $response);
+
+
+  
+  
+  
+  
   
  case 'morse':
  case 'MORSE':
