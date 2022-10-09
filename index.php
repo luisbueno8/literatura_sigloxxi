@@ -24,6 +24,7 @@ $pumba  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc
 $kali  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/kali.jpg" -F caption="", hakuna matata" > /dev/null &';
 $salamanca  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/salamanca.jpg" -F caption="", hakuna matata" > /dev/null &';
 $dni  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/dni.png" -F caption="", hakuna matata" > /dev/null &';
+$wanna  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/wanna.png" -F caption="", hakuna matata" > /dev/null &';
 
 
 
@@ -104,6 +105,7 @@ case 'Sudo su':
  case 'SALAMANCA.ES':
     echo exec ($salamanca);
    $response="Respuesta correcta, ya tienes la letra S";
+     sendMessage($chatId, $response);
    $response="🇸";
    sendMessage($chatId, $response);
    sleep(4);
@@ -121,12 +123,30 @@ case 'Sudo su':
 
     echo exec ($dni);
    $response="Respuesta correcta, ya tienes la letra E";
+     sendMessage($chatId, $response);
    $response="🇪";
    sendMessage($chatId, $response);
    sleep(4);
        $response="4. A la dirección física de un ordenador se la llama de esta forma...";
    sendMessage($chatId, $response);
   break;
+  
+ case 'MAC':
+ case 'mac':
+ case 'Mac':
+     $response="Respuesta correcta, ya tienes la letra M";
+     sendMessage($chatId, $response);
+   $response="🇲";
+     sendMessage($chatId, $response);
+   sleep(4);
+       $response="5. Si ves la siguiente imagen, ¿cómo se llama este tipo de programa dañino?";
+   sendMessage($chatId, $response);
+  sleep (2);
+      echo exec ($wanna);
+  break;
+  
+  
+  
 
  case 'morse':
  case 'MORSE':
