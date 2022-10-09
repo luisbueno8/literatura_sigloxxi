@@ -23,10 +23,9 @@ $galletas  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_Cub
 $pumba  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/pumba.jpg" -F caption="amigo 🦁, hakuna matata" > /dev/null &';
 $kali  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/kali.jpg" -F caption="", hakuna matata" > /dev/null &';
 $salamanca  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/salamanca.jpg"> /dev/null &';
-//$dni  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/dni.png" -F caption="", hakuna matata" > /dev/null &';
-$wanna  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/wanna.png" -F caption="", hakuna matata" > /dev/null &';
+$dni  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/dni.png"> /dev/null &';
+$wanna  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://telegrambottetuan.herokuapp.com/animales/wanna.png"> /dev/null &';
 
-$dni  = 'curl -s -X POST "https://api.telegram.org/bot1378072574:AAHH6x_CubuHc7sjIRWDBaLsei8gZeyBkYE/sendPhoto?chat_id='.$chatId.'" -F photo="https://ugeek.github.io/blog/icon/ugeek.png" -F caption="", hakuna matata" > /dev/null &';
 
 
 
@@ -107,6 +106,7 @@ case 'Sudo su':
  case 'Salamanca.es':
  case 'SALAMANCA.ES':
     echo exec ($salamanca);
+  sleep (1);
    $response="Respuesta correcta, ya tienes la letra S";
      sendMessage($chatId, $response);
    $response="🇸";
@@ -148,6 +148,20 @@ case 'Sudo su':
       echo exec ($wanna);
   break;
   
+ case 'ransomware':
+ case 'RANSOMWARE':
+ case 'Ransomware':
+  
+       $response="Respuesta correcta, ya tienes la letra R";
+     sendMessage($chatId, $response);
+   $response="🇷";
+       sendMessage($chatId, $response);
+  sleep (2);
+  $response="Ya tienes las letras 🇴 🇸 🇪 🇲 🇷.";
+         sendMessage($chatId, $response);
+  $response="Ahora es el momento de ordenar las letras para obtener el nombre de un código de cifrado (Pista: pipi pipipipi)";
+         sendMessage($chatId, $response);
+  break;
   
   
 
