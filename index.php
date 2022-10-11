@@ -146,7 +146,6 @@ case 'Sudo su':
    sendMessage($chatId, $response);
   sleep (2);
       echo exec ($wanna);
-        echo exec ($dni);
 
   break;
   
